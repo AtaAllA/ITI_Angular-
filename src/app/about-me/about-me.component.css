@@ -1,0 +1,21 @@
+.about-me-section{
+    width: 100%;
+    height: 400px;
+    padding: 3.125em; /*50px*/
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .about-me-section h2{
+    color: #542E45;
+    /*margin-top: -150px;*/
+  }
+  .about-me-section ul{
+    color: black;
+    flex-basis: 50%;
+    font-size: 20px;
+    display: flex;
+    text-decoration: none;
+  }
+  
