@@ -1,43 +1,30 @@
-<p>skills works!</p>
-<div class="container">
-    <div class="row">
-      <div class="cont">
-        <h3>Skills</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis dignissimos porro illo itaque aut molestiae
-          ut fugiat aliquam! Praesentium suscipit ipsa cupiditate voluptatibus non at ullam tempore earum sit quis?</p>
-          <button class="button-success" (click)="btnclicked()">Download</button>
-        </div>
-      <div class="col-sm">
-        <h5>UI/UX Design</h5>
-        <h5>Responsive Design</h5>
-        <h5>Web Design</h5>
+<section class="skills mb-5 pb-5">
+  <div class="container text-center mt-5">
+    <div class="row pt-5">
+      <h2>Skills</h2>
+      <p class="mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam repellat, beatae quis quidem
+        error cupiditate maxime laborum quo esse dolorem vitae, eveniet reprehenderit magnam earum! Alias, nesciunt.
+        Possimus, corporis! Id? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cumque, culpa nam
+        adipisci, incidunt accusantium, doloremque libero labore corrupti temporibus officia magnam nisi reiciendis
+        dolore aut qui iusto blanditiis quibusdam?</p>
+      <div class="col-lg-5 mt-5">
+        <h3>MY FOCUS</h3>
+        <p>UI/UX Design</p>
+        <p>Responsive Design</p>
+        <p>Web Design</p>
       </div>
-  
-      <div class="col-sm">
-        <div>
-          <h5>{{skill[0]}}</h5>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-              aria-valuemax="100"></div>
-          </div>
-        </div>
-  
-        <div>
-          <h5>{{skill[1]}}</h5>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0"
-              aria-valuemax="100"></div>
-          </div>
-        </div>
-  
-        <div>
-          <h5>{{skill[2]}}</h5>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0"
-              aria-valuemax="100"></div>
-          </div>
-        </div>
+
+      <div class="col-lg-7 mt-2">
+
+<div *ngFor="let x of Arr">
+  <app-skill [skill]="x.skill"[value]= "x.value"></app-skill>
+<br>
+
+</div>
+
+       
       </div>
-  
     </div>
+
   </div>
+</section>

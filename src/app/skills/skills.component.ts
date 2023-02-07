@@ -6,8 +6,31 @@ import { Component } from '@angular/core';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent {
-  skill = ['Java', 'TypeScript', 'php'];
-  btnclicked() {
-    console.log("downloading");
-  }
+
+
+Arr : any[]
+constructor(){
+  this.Arr =[
+    {
+      skill: "html" ,
+      value:50
+    },
+
+    {
+      skill: "css",
+      value:20
+    },
+    {
+      skill: "js",
+      value:70
+    },
+    {
+      skill: "bootstrap",
+      value:40
+    }
+
+  ]
+
+}
+
 }
